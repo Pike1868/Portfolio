@@ -295,6 +295,12 @@ li a{
 
 /*About Section*/
 
+.about-section h1{
+    display:flex;
+    justify-content:center;
+    padding:1rem;
+}
+
 /*Mobile View*/
 @media (max-width: 768px){
     #nav{
