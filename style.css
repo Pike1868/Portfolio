@@ -1,0 +1,329 @@
+
+@font-face {
+    font-family: 'anuratiregular';
+    src: url(anurati-regular-webfont.woff2) format('woff2'),
+         url(anurati-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@700&family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+html h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+font-family: 'Merriweather', serif;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+
+/* NAVBAR */
+#mobile-nav{
+    display:none;
+}
+
+.nav-bar{
+    position: absolute;
+    z-index: 2;
+    width:100%;
+    
+}
+
+ul{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 10%;
+ list-style: none;
+ height:10vh;
+ background-color:rgba(0,0,0,0.5);
+ font-family: anuratiregular;
+}
+
+li a{
+    display: block;
+    color: #333533;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#name {
+    max-width: 5vw;
+    max-height: 10vh;
+}
+
+/* Hero Section*/
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container{
+    background-image: url(https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin: 0vh;
+    animation: scale 15s;
+}
+
+@keyframes scale {
+    0%{
+        transform:scale(1.5);
+    }
+    100%{
+        transforms:scale(1)
+    }
+
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.4);
+    z-index: 1;
+
+}
+
+.hero-text{
+    display: flex;
+    justify-content: center;
+    align-items:left;
+    flex-direction: column;
+    position: absolute;
+    top:35%;
+    left: 10%;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 2;
+
+}
+
+.firstword{
+    color:#2f5079;
+
+}
+
+.resume-cta{
+    border: 3px solid #e3eee3;
+    width: 175px;
+    padding: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.resume-text{
+    color: #ffc300;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+/* Hero Section*/
+
+/*Project Section*/
+
+.projects{
+    width: auto;
+    height: auto;
+}
+
+.project-header{
+    height: 100px;
+    font-family: anuratiregular;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 100%;
+}
+
+.project-container{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.projects{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.pt-project{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url(https://images.unsplash.com/photo-1547919307-1ecb10702e6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80) ;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.dj-project{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url(https://images.unsplash.com/photo-1461784180009-21121b2f204c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) ;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.restaurant-project{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url(https://media.istockphoto.com/photos/empty-cafe-interior-with-chairs-and-tables-picture-id1286692956?b=1&k=20&m=1286692956&s=170667a&w=0&h=PGjBVMeX_zHAEO_6ZPipHTfQx5zoQBOU24Z4bG4Xqsk=) ;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.text-container{
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.text-container:hover{
+    height: 220px;
+}
+
+.name{
+    margin-top: 15px;
+    color: #011f5b;
+}
+
+.content{
+    padding: 25px 0;
+    color: #151514;
+}
+/*Project Section*/
+
+/*About Section*/
+
+.about-container{
+    
+    margin: 10%;
+    width: 80%;
+    height: auto;
+    background-color:#f8f8f8 ;
+    box-shadow: -15px 7px 30px rgba(0,0,0,0.2);
+}
+
+.img-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+
+.about-image{
+    width: 400px;
+    min-width: 50%;
+    height: 450px;
+    min-height: 60%;
+    background-image: url(luispic.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.1);
+    
+    
+    
+}
+
+.about-text{
+    height:auto;
+    width: 50%;
+    font-size: 1.25rem;
+    align-content: center;
+    padding: 20px;
+
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3rem;
+    width: 30%;
+    margin: 25% 35%;
+    
+}
+
+/*About Section*/
+
+/*Mobile View*/
+@media (max-width: 768px){
+    #nav{
+        display:none;
+    }
+
+    .mobile-nav{
+        display: block;
+        
+    }
+
+    #mobile-logo{
+            max-width: 5vw;
+            max-height: 10vh;
+            
+    }
+    i{
+        color: #fff;
+    }
+
+    .mobile-nav-bar{
+        width:100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 5;
+    }
+
+    ul{
+        background-color: rgba(0,0,0,0.5);
+    }
+}
+/*Mobile View*/
