@@ -1,335 +1,337 @@
+/* Pallete Colors: 
+Metallic Starburst: #AD8848
+Light French Beige: #C0A069
+Nickel: #767D7D
+Prussian Blue: #102B3F
+Dark Jungle Green: #062726
+White: #FFFFFF
+Eerie Black: #222222
+*/
 
-@font-face {
-    font-family: 'anuratiregular';
-    src: url(anurati-regular-webfont.woff2) format('woff2'),
-         url(anurati-regular-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@700&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Outfit:wght@300;400;600&display=swap');
+
 
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    padding: 0%;
 }
 
-
-
-html h2{
-    font-family: 'Montserrat', sans-serif;
+html{
+    height: 100%;
+    width: 100%;
 }
 
-p{
-font-family: 'Merriweather', serif;
+body{
+    font-family: 'Lato', sans-serif;
+    color: #222;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
-.mobile-nav{
-    display: none;
-}
-
-
-/* NAVBAR */
-#mobile-nav{
-    display:none;
-}
-
-.nav-bar{
-    position: absolute;
-    z-index: 2;
-    width:100%;
-    
-}
-
-ul{
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding: 0 10%;
- list-style: none;
- height:10vh;
- background-color:rgba(0,0,0,0.5);
- font-family: anuratiregular;
-}
-
-li a{
-    display: block;
-    color: #333533;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-#name {
-    max-width: 5vw;
-    max-height: 10vh;
-}
-
-/* Hero Section*/
 .container{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.image-container{
-    background-image: url(https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    margin: 0vh;
-    animation: scale 15s;
+main{
+    padding: 3rem 0;
 }
 
-@keyframes scale {
-    0%{
-        transform:scale(1.5);
-    }
-    100%{
-        transforms:scale(1)
-    }
 
+/* Nav Start */
+
+.nav-container{
+    position: fixed;
+    background-color:#222;
+    width: 100vw;
+    z-index: 100;
 }
 
-.overlay{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgb(0, 0, 0, 0.4);
-    z-index: 1;
 
+.logo{
+    width: 2rem;
+    height: 2.5rem;
+    filter: invert(71%) sepia(24%) saturate(668%) hue-rotate(359deg) brightness(90%) contrast(80%);
 }
 
-.hero-text{
+.logo:hover{
+    filter: invert(94%) sepia(2%) saturate(804%) hue-rotate(332deg) brightness(106%) contrast(95%);
+    transition: all 200ms ease-in-out;
+}
+
+
+.nav-menu{
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
     display: flex;
-    justify-content: center;
-    align-items:left;
-    flex-direction: column;
-    position: absolute;
-    top:35%;
-    left: 10%;
-    color: #fff;
-    text-transform: uppercase;
-    z-index: 2;
-
-}
-
-.firstword{
-    color:#2f5079;
-
-}
-
-.resume-cta{
-    border: 3px solid #e3eee3;
-    width: 175px;
-    padding: 10px;
-    margin-top: 20px;
-    text-decoration: none;
-    text-align: center;
-}
-
-.resume-text{
-    color: #ffc300;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-/* Hero Section*/
-
-/*Project Section*/
-
-.projects{
-    width: auto;
-    height: auto;
-}
-
-.project-header{
-    height: 100px;
-    font-family: anuratiregular;
-    font-size: 3rem;
-    display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    flex: 100%;
 }
 
-.project-container{
+.nav-item{
+    list-style: none;
+    margin-right: 2rem;
     font-size: 1rem;
+    font-weight: 700;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #AD8848;
+}
+
+.nav-item a:hover{
+    text-decoration: none;
+    color: #F9F6F1;
+    transition: all 200ms ease-in-out;
+}
+
+.nav-item:first-child{
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+/* .nav-btn{
+    color: #102B3F;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 550;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.nav-btn:hover{
+    background-color: #AD8848;
+    transition: all 200ms ease-in-out;
+} */
+
+/* Trying to add a transition change in the navbar that changes colors
+ while scrolling */
+/* .nav.active{
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.nav.active a{
+    color: #1D4D72;
+} */
+
+.nav.active a:hover{
+    text-decoration: none;
+    color: #F9F6F1;
+    transition: all 200ms ease-in-out;
+}
+
+.nav.active.nav-container{
+    padding: 10px 0;
+}
+
+.active.logo:hover{
+    filter: invert(23%) sepia(17%) saturate(4578%) hue-rotate(178deg) brightness(85%) contrast(81%);
+}
+
+/* Nav End */
+
+/* Hero Start */
+.hero{
+    background-image: url("https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px;
-}
-
-.projects{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: wrap;
-}
-
-.pt-project{
-    width: 400px;
-    height: 400px;
-    background-color: #fff;
+    text-align: center;
     position: relative;
-    box-shadow: -15px 7px 30px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    margin: 50px;
-    background-image: url(https://images.unsplash.com/photo-1547919307-1ecb10702e6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80) ;
-    background-size: cover;
-    background-position: center;
-
-
-}
-.dj-project{
-    width: 400px;
-    height: 400px;
-    background-color: #fff;
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    margin: 50px;
-    background-image: url(https://images.unsplash.com/photo-1461784180009-21121b2f204c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) ;
-    background-size: cover;
-    background-position: center;
-
-
-}
-.restaurant-project{
-    width: 400px;
-    height: 400px;
-    background-color: #fff;
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    margin: 50px;
-    background-image: url(https://media.istockphoto.com/photos/empty-cafe-interior-with-chairs-and-tables-picture-id1286692956?b=1&k=20&m=1286692956&s=170667a&w=0&h=PGjBVMeX_zHAEO_6ZPipHTfQx5zoQBOU24Z4bG4Xqsk=) ;
-    background-size: cover;
-    background-position: center;
-
-
-}
-
-.text-container{
-    position: absolute;
-    height: 75px;
-    width: 100%;
     z-index: 2;
-    left: 0;
-    bottom: 0;
-    background-color: #fff;
-    overflow: hidden;
+    color: #FFF;
+}
+/* Will add an overlay to make the word stand out from the background image,
+need to use z-index to position the text on top of the image and overlay */
+
+.hero::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
-.text-container:hover{
-    height: 220px;
-}
-
-.name{
-    margin-top: 15px;
-    color: #011f5b;
+.hero h1{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    position: relative;
+    z-index: 3;
 }
 
 .content{
-    padding: 25px 0;
-    color: #151514;
-}
-/*Project Section*/
-
-/*About Section*/
-
-.about-container{
-    
-    margin: 10%;
-    width: 80%;
-    height: auto;
-    background-color:#f8f8f8 ;
-    box-shadow: -15px 7px 30px rgba(0,0,0,0.2);
+    letter-spacing: 0.05rem;
+    line-height: 1.3rem;
+    padding: 1rem;
+    position: relative;
+    z-index: 4;
 }
 
-.img-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-
-}
-
-.about-image{
-    width: 400px;
-    min-width: 50%;
-    height: 450px;
-    min-height: 60%;
-    background-image: url(luispic.jpg);
-    background-size: cover;
+.resume{
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    z-index: 5;
+    width: fit-content;
+    margin: auto;
+    padding: 0.5rem;
+    margin-top: 1rem;
     border-radius: 5px;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.1);
-    
-    
-    
+    font-size: 1.2rem;
+    color:#102B3F;
+    font-weight: bold;
 }
 
-.about-text{
-    height:auto;
-    width: 50%;
-    font-size: 1.25rem;
-    align-content: center;
-    padding: 20px;
+.resume a{
+    position: relative;
+    z-index: 6;
+    text-decoration: none;
+    color: #102B3F;
+}
+
+.resume a:hover{
+    color: #AD8848;
+    font-weight: bolder;
+}
+
+/* Hero End */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
 
 }
 
-.social-icons{
+
+/* Quotes Generator Start */
+.quotes h3, .quotes p{
+    margin: 1rem;
+    text-align: center;
+}
+
+/* Quotes Generator End */
+/* Projects Start */
+.projects h3, .projects p{
+    margin: 1rem;
+    text-align: center;
+}
+/* Projects End */
+
+
+
+/* About Me Start */
+.about{
+    margin-bottom: 3rem;
+}
+
+.about h3{
+    margin: 1rem;
+    text-align: center;
+}
+
+/* About Me End */
+
+/* Footer Start */
+footer{
+    background-color: #222;
+    color: #AD8848;
+    width: 100vw;
+    margin-top: auto;
+}
+
+.footer-container{
+    background-color: #222;
+    height: 100%;
+    margin: auto;
+}
+
+
+.footer-row{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    font-size: 3rem;
-    width: 30%;
-    margin: 25% 35%;
-    
+    height: 100%;
 }
 
-/*About Section*/
-
-.about-section h1{
-    display:flex;
-    justify-content:center;
-    padding:1rem;
+.footer-col{
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-/*Mobile View*/
-@media (max-width: 768px){
-    #nav{
-        display:none;
-    }
-
-    .mobile-nav{
-        display: block;
-        
-    }
-
-    #mobile-logo{
-            max-width: 5vw;
-            max-height: 10vh;
-            
-    }
-    i{
-        color: #fff;
-    }
-
-    .mobile-nav-bar{
-        width:100%;
-        position: fixed;
-        bottom: 0;
-        z-index: 5;
-    }
-
-    ul{
-        background-color: rgba(0,0,0,0.5);
-    }
+.footer-col h4{
+    font-size: 2rem;
 }
-/*Mobile View*/
+
+.footer-col ul{
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.footer-contact{
+    padding-left: 1rem;
+}
+.footer-social h4{
+    text-align: center;
+}
+
+.footer-contact-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-contact-list li{
+    padding: 0.25rem;
+}
+
+.footer-contact-list a{
+    color: #AD8848;
+    text-decoration: none;
+}
+
+.footer-contact-list a:visited{
+    color: #AD8848;
+}
+.footer-icons{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fab, .fab:visited{
+    color: #AD8848;
+}
+.fab:hover{
+    color: #FFF;
+}
+
+.footer-item i{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+/* Footer End */
