@@ -1,12 +1,12 @@
-/* Pallete Colors: 
-Metallic Starburst: #AD8848
-Light French Beige: #C0A069
-Nickel: #767D7D
-Prussian Blue: #102B3F
-Dark Jungle Green: #062726
-White: #FFFFFF
-Eerie Black: #222222
-*/
+:root{ 
+--Metallic-Starburst: #AD8848;
+--Light-Beige: #C0A069;
+--Nickel: #767D7D;
+--Prussian-Blue: #102B3F;
+--Dark-Jungle-Green: #062726;
+--White: #FFFFFF;
+--Eerie-Black: #222222;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Outfit:wght@300;400;600&display=swap');
 
@@ -24,7 +24,7 @@ html{
 
 body{
     font-family: 'Lato', sans-serif;
-    color: #222;
+    color: var(--Eerie-Black);
     width: 100%;
     height: 100%;
     margin: 0px;
