@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --clr-background: rgb(247, 244, 244);
+  --clr-dark-gray: rgb(118, 125, 125);
+  --clr-dark-black: #222222;
+  --clr-dark-text: rgb(226, 225, 225);
+  --font-main: "Lato", serif;
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    min-width: 600px;
+  }
+
+  header {
+    padding-bottom: 4rem;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar__ul li {
+    padding: 5px 15px 15px 10px;
+    background-color: transparent;
+  }
+
+  .header__container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__container img {
+    max-width: 300px;
+  }
+
+  .header__container p {
+    max-width: 350px;
+    text-align: left;
+  }
+
+  /* Portfolio section at 768----------- */
+  .portfolio__container {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1165px;
+  }
+
+  .card {
+    min-width: 300px;
+    width: 100%;
+  }
+
+  .card img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* Skills at 768 ------------------- */
+
+  .skills {
+    width: 80%;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .skills-container {
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  .skills h2 {
+    margin-bottom: -10px;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .skills__item {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Footer at 768px ---------------- */
+  footer {
+    display: flex;
+    align-items: center;
+  }
+
+  footer p {
+    max-width: 400px;
+    padding-bottom: 2rem;
+  }
+
+  .phone,
+  .email {
+    margin-right: 8px;
+  }
+
+  .footer__nav {
+    width: 95%;
+  }
+
+  .footer__nav h2 {
+    text-transform: none;
+  }
+
+  .footer__nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-left: auto;
+  }
+
+  .footer__nav-links li {
+    padding: 5px 10px 10px 10px;
+    text-decoration: none;
+  }
+
+  .footer__nav-hr {
+    width: 95%;
+    border-color: rgb(255, 255, 255);
+  }
+  .to-top {
+    display: none;
+  }
+}
+
+/* min width 1024 ---------------------------------- */
+@media screen and (min-width: 1024px) {
+  .navbar,
+  .navbar__ul,
+  .header__container {
+    display: flex;
+  }
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar__ul {
+    flex-direction: row;
+  }
+
+  .navbar__ul li {
+    background-color: transparent;
+  }
+
+  .navbar__ul .link {
+    margin: 0;
+  }
+
+  .header__container {
+    flex-direction: row-reverse;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__container img {
+    max-width: 330px;
+  }
+
+  .header__text {
+    max-width: 400px;
+    text-align: center;
+  }
+
+  /* Portfolio section------------------------- */
+  .portfolio__container {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .card {
+    max-width: 300px;
+  }
+
+  .card img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .card p {
+    font-weight: 200;
+  }
+  /* End Portfolo------------------------------ */
+}
+
+/* Dark mode------------------------------- */
+button[class="darkmode"] {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgb(43, 43, 43);
+  border-radius: 50%;
+}
+
+.darkmode .portfolio {
+  background-color: var(--clr-dark-black);
+  color: var(--clr-dark-text);
+}
+
+.darkmode footer {
+  background-color: var(--clr-dark-black);
+  color: var(--clr-dark-text);
+}
+
+.darkmode .wrapper {
+  background-color: var(--clr-dark-black);
+  color: var(--clr-dark-text);
+}
+
+.darkmode .navbar__ul li {
+  color: var(--clr-dark-text);
+  background-color: transparent;
+}
+
+.darkmode a[href] {
+  color: var(--clr-dark-text);
+}
