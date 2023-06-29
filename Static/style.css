@@ -249,8 +249,9 @@ footer p {
   font-weight: 200;
 }
 
-.footer__text-container1 p {
+.footer__text-container p {
   color: var(--clr-gold);
+  max-width: 80%;
 }
 
 .footer__nav-links {
@@ -271,8 +272,19 @@ footer p {
   padding: 20px;
 }
 
-.footer__text-container1 {
+.footer__email-container {
   padding-bottom: 3rem;
+}
+ 
+#email__link{
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--clr-dark-black);
+}
+
+#email__link:hover{
+  color: var(--clr-dark-gray);
+  cursor: pointer;
 }
 
 .footer__nav-links li {
@@ -307,4 +319,7 @@ footer p {
 .to-top a {
   text-decoration: none;
   color: black;
+}
+#footer__logo {
+  max-width: 40px;
 }

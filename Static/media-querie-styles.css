@@ -239,3 +239,7 @@ button[class="darkmode"] {
 .darkmode a[href] {
   color: var(--clr-dark-text);
 }
+
+.darkmode #email__link{
+  color: var(--clr-dark-text);
+}
