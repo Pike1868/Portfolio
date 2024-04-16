@@ -142,8 +142,8 @@ footer h2 {
 
 .card {
   margin: 1.5rem 0;
-  max-width: 360px;
-  /*   box-shadow: 5px 5px 5px #fbbebe; */
+  max-width: 22.5rem;
+  min-height: 22rem;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px 0px,
     rgba(0, 0, 0, 0.5) 0px 2px 15px 0px;
   padding: 1rem;
@@ -275,14 +275,14 @@ footer p {
 .footer__email-container {
   padding-bottom: 3rem;
 }
- 
-#email__link{
+
+#email__link {
   text-decoration: none;
   cursor: pointer;
   color: var(--clr-dark-black);
 }
 
-#email__link:hover{
+#email__link:hover {
   color: var(--clr-dark-gray);
   cursor: pointer;
 }
